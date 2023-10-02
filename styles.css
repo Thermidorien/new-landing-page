@@ -8,29 +8,35 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    width: 200px;
+    top: 0;
+    left: 0;
+    width: 150px;
     height:100%;
     color: whitesmoke;
     background-color: rgb(38, 38, 71);
     padding: 0px 0px 0px 0px;
+    z-index: 999;
+    justify-content: flex-start;
+    padding: 20px 0;
 }
 
 .header-logo img {
     width: 50px;
-    height: auto;
+    height: auto;   
+    margin-bottom: 20px;
 }
 
 .header-logo {
-    transition: all 2.0s;
+    transition: all 1.0s;
 }
 
 .header-logo:hover {
-    transform: translateY(30px);
+    transform: translateY(20px);
 }
 
 .header-links {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     padding: 10px;
 }
@@ -49,6 +55,9 @@ body {
     text-shadow: 2px 2px 1px black;
 }
 
+
+
+
 .footer {
     position: fixed;
     display: flex;
@@ -60,5 +69,7 @@ body {
     width: 100%;
     height:50px;
     align-items: left;
+    bottom: 0;
+    z-index: 999;
     justify-content: center;
 }
